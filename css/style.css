@@ -1,0 +1,177 @@
+/* 노멀라이즈 */
+body, ul, li {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 폰트 */
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 커스텀시작 */
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+/* heaer */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0 0.8rem;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.header_wrap {
+  /* border:2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width:960px) {
+  .header_wrap {
+  max-width:1440px;
+  }
+}
+
+#header nav > ul ul,
+#header nav::before{
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#header nav::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  content: '';
+  height: 0;
+  z-index: -1;
+  visibility: hidden;
+  background-color: skyblue;
+}
+#header nav:hover::before,
+#header nav:focus::before{
+  height: 206px;
+  opacity:1;
+  z-index: 2;
+  visibility:visible;
+}
+
+#header nav > ul {
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#header nav a{position: relative;}
+
+#header nav > ul > li {
+  position: relative;
+}
+
+#header nav > ul > li > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  padding: 0 2.2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+#header nav > ul > li > a::before {
+  display: block;
+  position: absolute;
+  content:"";
+  bottom: 0;
+  left: 2.2rem;
+  right: 2.2rem;
+  height: 2px;
+  background: #ff592e;
+  transform: scaleX(0);
+  transform-origin: top right;
+  transition:all 0.3s;
+}
+
+#header nav > ul > li:last-child > a::before {
+  /*right: 0;*/
+}
+
+#header nav > ul > li:hover > a::before,
+#header nav > ul > li:focus > a::before {
+  transform: scaleX(1);
+  transform-origin: top left;
+}
+
+#header nav > ul > li:last-child > a {
+  padding-right: 0;
+}
+
+#header nav > ul > li > a > span.shop {
+  display: inline-block;
+  background: #ff592E;
+  color: #fff;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 0.75rem;
+  padding: 0 0.9rem;
+}
+
+#header nav > ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 120%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+  padding: 2rem 0 2rem 2.2rem;
+}
+
+#header nav:hover > ul ul {
+  opacity:1;
+  visibility:visible;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+#header nav > ul > li:last-child > ul{ 
+  padding-left: 0;
+  text-align: right
+}
+
+
+#header nav > ul > li > a + ul > li {
+  display: block;
+  padding: 8px 0;
+}
+
+#header nav > ul > li > a + ul > li a { 
+  padding: 8px 0;
+}
