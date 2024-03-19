@@ -214,8 +214,14 @@ header.active {transform: translateY(-100%);}
 }
 
 /* section_1 메인슬라이드 */
+
+
 [data-aos=fade-down] {
   transform: translate3d(0,-100px,0)
+}
+
+.section_1 {
+  height: 100%;
 }
 
 .swiper .swiper-pagination {
@@ -236,7 +242,8 @@ header.active {transform: translateY(-100%);}
 
 .slider-box-1 .swiper {
   width: 100%;
-  height:100%;
+  /* height:100% ; */
+  height: 54rem;
 }
 
 .slider-box-1 .main_img {
