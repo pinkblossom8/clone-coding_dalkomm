@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>달콤커피 클론코딩</title>
+  <!-- 제이쿼리 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- 스와이퍼 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
+  <!-- aos 불러오기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- 기본연결 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
@@ -19,37 +27,37 @@
           <li>
             <a href="#">Dal.komm</a>
             <ul>
-              <li><a href="#">2차메뉴</a></li>
-              <li><a href="#">2차메뉴</a></li>
-              <li><a href="#">2차메뉴</a></li>
+              <li><a href="#">브랜드 이야기</a></li>
+              <li><a href="#">App 소개</a></li>
+              <li><a href="#">다날에프엔비 이야기</a></li>
             </ul>
           </li>
           <li>
             <a href="#">메뉴</a>
             <ul>
-              <li><a href="#">2차메뉴</a></li>
+              <li><a href="#">메뉴</a></li>
             </ul>
           </li>
           <li>
             <a href="#">매장</a>
             <ul>
-              <li><a href="#">2차메뉴</a></li>
-              <li><a href="#">2차메뉴</a></li>
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#">글로벌 달콤</a></li>
             </ul>
           </li>
           <li>
             <a href="#">새로운 소식</a>
             <ul>
-              <li><a href="#">2차메뉴</a></li>
-              <li><a href="#">2차메뉴</a></li>
-              <li><a href="#">2차메뉴</a></li>
+              <li><a href="#">뉴스</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">달콤 스토리</a></li>
             </ul>
           </li>
           <li>
             <a href="#">창업안내</a>
             <ul>
-              <li><a href="#">2차메뉴</a></li>
-              <li><a href="#">2차메뉴</a></li>
+              <li><a href="#">가맹점 개설 안내</a></li>
+              <li><a href="#">창업 상담 신청</a></li>
             </ul>
           </li>
           <li>
@@ -62,5 +70,43 @@
       <div class="empty"></div>
     </div>
   </header>
+  <article>
+    <div class="section_1">
+      <div class="slider-box-1" data-aos="fade-down" data-aos-delay="300">
+
+        <!-- 슬라이더 메인 컨테이너 -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- 슬라이드 -->
+            <div class="swiper-slide">
+              <img class="main_img" src="/img/main_1.png" alt="메인이미지_딸기시즌음료">
+              <div class="main_wrap">
+                <div class="txt_wrap">
+                  <div class="main_txt">
+                    지금 딸기와<br>사랑에 빠져보세요!
+                  </div>
+                  <a href="#" class="main_btn">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="main_img" src="/img/main_2.png" alt="메인이미지_새학기">
+              <div class="main_wrap">
+                <div class="txt_wrap">
+                  <div class="main_txt">
+                    새학기<br>쿠폰 EVENT!
+                  </div>
+                  <a href="#" class="main_btn">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 슬라이드 페이지 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      
+      </div>
+    </div>
+  </article>
 </body>
 </html>

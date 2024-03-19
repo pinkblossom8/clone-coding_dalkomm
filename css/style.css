@@ -18,6 +18,18 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ONE-Mobile-Title';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 라이브러리 */
+.con {
+  width: 1440px;
+}
+
 /* 커스텀시작 */
 html {
   font-size: 20px;
@@ -26,7 +38,7 @@ html {
 body {
   font-family: 'SpoqaHanSansNeo-Regular';
   font-size: 1rem;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 /* heaer */
@@ -39,6 +51,8 @@ body {
   padding: 0 0.8rem;
   background: rgba(255, 255, 255, 0.75);
 }
+
+header.active {transform: translateY(-100%);}
 
 .header_wrap {
   /* border:2px solid red; */
@@ -71,8 +85,9 @@ body {
   height: 0;
   z-index: -1;
   visibility: hidden;
-  background-color: skyblue;
+  background-color: rgba(255, 255, 255, 0.75);
 }
+
 #header nav:hover::before,
 #header nav:focus::before{
   height: 206px;
@@ -81,6 +96,7 @@ body {
   visibility:visible;
 }
 
+/* 1차메뉴 */
 #header nav > ul {
   display: flex;
   height: 6rem;
@@ -100,8 +116,16 @@ body {
   align-items: center;
   height: 6rem;
   padding: 0 2.2rem;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.9rem;
+  color:#222;
+}
+
+#header nav > ul > li:hover > a,
+#header nav > ul > li:focus > a {
+  color: #ff592E;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 
 #header nav > ul > li > a::before {
@@ -142,6 +166,7 @@ body {
   padding: 0 0.9rem;
 }
 
+/* 2차메뉴 */
 #header nav > ul ul {
   position: absolute;
   top: 100%;
@@ -173,5 +198,84 @@ body {
 }
 
 #header nav > ul > li > a + ul > li a { 
+  color:#222;
+  font-size: 0.9rem;
   padding: 8px 0;
+}
+
+#header nav > ul > li > a + ul > li:hover a,
+#header nav > ul > li > a + ul > li:focus a { 
+  color:#ff592E;
+  transition: all 0.2s;
+}
+
+#header nav > ul > li:last-child > a::before {
+  right: 0;
+}
+
+/* section_1 메인슬라이드 */
+[data-aos=fade-down] {
+  transform: translate3d(0,-100px,0)
+}
+
+.swiper .swiper-pagination {
+  position: absolute;
+  bottom: 2rem !important;
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: #ff592e;
+  margin: 0 10px !important;
+  width: 10px;
+  height: 10px;
+}
+
+.slider-box-1 {
+  height: 100%;
+}
+
+.slider-box-1 .swiper {
+  width: 100%;
+  height:100%;
+}
+
+.slider-box-1 .main_img {
+  width: 100vw;
+}
+
+.main_wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.main_wrap .txt_wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1440px;
+  padding: 0 16px;
+}
+
+.main_wrap .txt_wrap .main_txt {
+  color:#f43b00;
+  font-size: 2.7rem;
+  font-weight: 400;
+  font-family: 'ONE-Mobile-Title';
+  line-height: 3.5rem;
+  word-spacing: -0.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.main_wrap .txt_wrap .main_btn{
+  padding:20px 48px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #f43b00;
+  border:1px solid #f43b00;
+  word-spacing: -0.1rem;
 }
