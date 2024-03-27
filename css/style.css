@@ -25,6 +25,15 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 /* 라이브러리 */
 .con {
   width: 1440px;
@@ -52,7 +61,11 @@ body {
   background: rgba(255, 255, 255, 0.75);
 }
 
-header.active {transform: translateY(-100%);}
+header.active {
+  transform: translateY(-100%);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
 
 .header_wrap {
   /* border:2px solid red; */
@@ -222,6 +235,7 @@ header.active {transform: translateY(-100%);}
 
 .section_1 {
   height: 100%;
+  font-size: 0;
 }
 
 .swiper .swiper-pagination {
@@ -242,8 +256,8 @@ header.active {transform: translateY(-100%);}
 
 .slider-box-1 .swiper {
   width: 100%;
-  /* height:100% ; */
-  height: 54rem;
+  height:100%;
+  /* height: 54rem; */
 }
 
 .slider-box-1 .main_img {
@@ -285,4 +299,194 @@ header.active {transform: translateY(-100%);}
   color: #f43b00;
   border:1px solid #f43b00;
   word-spacing: -0.1rem;
+}
+
+/* section_2 */
+.section_2.new-items {
+  background: url(../img/bg_news-item.png) 0 0 no-repeat #fff;
+  background-size: 40vw 46vw;
+  height: 50vw;
+}
+
+.new-items_con {
+  width: 72rem;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section_2 .new-items_header {
+  width: 26vw;
+  padding-top: 6.25vw;
+  padding-left: 1rem;
+}
+
+.section_2 .new-items_sub-tit {
+  font-size: 1.9vw;
+  color:#f43400;
+  font-family: 'yg-jalnan';
+}
+
+.section_2 .new-items_tit {
+  font-family: 'ONE-Mobile-Title';
+  font-size: 3.25vw;
+  color:#f43400;
+  letter-spacing: -0.1rem;
+  margin-top: 1.5rem;
+}
+
+.section_2 .new-items_info {
+  font-family: 'NanumSquare';
+  font-size: 1.3vw;
+  margin-top:1.5rem;
+  color:#1a1a1a;
+}
+
+.section_2 .new-items_more {
+  display: inline-block;
+  position: relative;
+  font-size: 0.85vw;
+  font-weight: 600;
+  margin-top: 8.5vw;
+}
+
+.section_2 .new-items_more::after {
+  position: absolute;
+  content: "";
+  width: 1.5vw;
+  height: 0.41vw;
+  right: -2vw;
+  top: 0.41vw;
+  background: url(../img/arrow_right.png) 0 0 no-repeat;
+  background-size:1.5vw 0.41vw;
+}
+
+/* .section_2 슬라이드 */
+.section_2 .new-items_list {
+  position: absolute;
+  width: 53vw;
+  left: 40%;
+  top: 26%;
+}
+.slider-box-2 .swiper {
+  height: 34.8rem;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  position: relative;
+  text-align: center;
+}
+
+.new-items_thumbnail {
+  text-align: center;
+}
+
+.new-items_thumbnail img {
+  width: 9.6vw;
+}
+
+.slider-box-2 .swiper .swiper-slide {
+  padding-top: 8vw;
+}
+
+.slider-box-2 .swiper .swiper-slide.swiper-slide-active {
+  padding: 0;
+}
+
+.slider-box-2 .swiper .swiper-slide.swiper-slide-active img {
+  width: 14vw;
+}
+
+.new-items_name {
+  font-size: 1.2vw;
+  font-weight: 700;
+  margin-top: 1.875vw;
+  color: #f43b00;
+}
+
+.new-items_en-name {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  font-size: 0.8vw;
+  color: #f43b00;
+}
+
+.new-items_list-info {
+  font-size: 0.8vw;
+  color:#252525;
+  line-height: 1.25vw;
+  margin-top: 1.0416666667vw;
+  font-family: 'NanumSquare';
+  word-break: keep-all;
+}
+
+.new-items_nav-wrap {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px; */
+  width: 16.6vw;
+}
+
+.slider-box-2 .swiper-button-prev::after,
+.slider-box-2 .swiper-button-next::after {
+  display:none;
+}
+
+.slider-box-2 .swiper-button-prev {
+  position: absolute;
+  left: 0vw;
+  top: 13vw;
+}
+.slider-box-2 .swiper-button-next {
+  position: absolute;
+  top: 13vw;
+  right: 36vw;
+}
+
+/* section3 */
+.section_3.signature-item {
+  height: 40vw;
+  background: url(../img/bg_signature-item.png) 100% 0 no-repeat #fff;
+  background-size: 57vw;
+  padding-top: 8rem;
+}
+
+.section_3 .signature-item_con {
+  width: 72rem;
+  margin: 0 auto;
+}
+
+.section_3 .signature-item_tit {
+  font-size: 1.9vw;
+  color:#f43400;
+  font-family: 'yg-jalnan';
+}
+
+.section_3 .signature-item_description {
+  width: 25vw;
+  font-family: 'NanumSquare';
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  letter-spacing: -0.1rem;
+}
+
+.section_3 .signature-item_tit-point {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.section_3 .signature-item_btn {
+  display: inline-block;
+  font-family: 'NanumSquare';
+  font-size: 1.2rem;
+  font-weight: 600;
+  color:#f43b00;
+  border: solid 1px #f43b00;
+  padding: 1rem 2.5rem;
+  margin-top: 1.3rem;
 }
