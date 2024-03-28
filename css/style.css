@@ -37,6 +37,7 @@ a {
 /* 라이브러리 */
 .con {
   width: 1440px;
+  margin: 0 auto;
 }
 
 /* 커스텀시작 */
@@ -447,7 +448,7 @@ header.active {
 
 /* section3 */
 .section_3.signature-item {
-  height: 40vw;
+  height: 30vw;
   background: url(../img/bg_signature-item.png) 100% 0 no-repeat #fff;
   background-size: 57vw;
   padding-top: 8rem;
@@ -467,14 +468,14 @@ header.active {
 .section_3 .signature-item_description {
   width: 25vw;
   font-family: 'NanumSquare';
-  font-size: 1.3rem;
+  font-size: 1.3vw;
   font-weight: 300;
-  line-height: 1.8rem;
+  line-height: 1.8vw;
   letter-spacing: -0.1rem;
 }
 
 .section_3 .signature-item_tit-point {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   font-weight: 600;
   display: block;
   margin-bottom: 0.5rem;
@@ -483,10 +484,104 @@ header.active {
 .section_3 .signature-item_btn {
   display: inline-block;
   font-family: 'NanumSquare';
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 600;
   color:#f43b00;
   border: solid 1px #f43b00;
   padding: 1rem 2.5rem;
   margin-top: 1.3rem;
+}
+
+/* section_4 */
+.section_4 .notice_header {
+  position: relative;
+  border-bottom: solid 0.9vw #f0eae8;
+  margin-bottom:5.9vw;
+  height: 7vw;
+}
+
+.section_4 .notice_header-tit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  text-align: center;
+  font-size: 4.2vw;
+  color: #f43b00;
+  font-family: 'yg-jalnan';
+  width: 30vw;
+  background: #fff;
+}
+
+.section_4 .notice_items {
+  display: flex;
+  margin-left: -1.05vw;
+  padding-bottom: 6.5vw;
+}
+
+.section_4 .notice_item {
+  margin-left: 1.05vw;
+  border:2px solid #ff592e;
+  padding:1.5vw 1.3vw 2.6vw;
+  text-align: left;
+}
+
+.section_4 .notice_item img {
+  width: 100%;
+}
+
+.section_4 .notice_tag {
+  margin-top:2vw;
+  font-size: 0.95vw;
+  color:#ff592e;
+  font-weight: 600;
+}
+
+.section_4 .notice_tit {
+  margin-top: 1vw;
+  color:#ff592e;
+  font-family: 'NanumSquare';
+  font-size: 2.15vw;
+  font-weight: 600;
+  letter-spacing: -0.15vw;
+}
+
+.section_4 .notice_content {
+  margin-top: 1vw;
+  font-size: 0.9vw;
+  font-family: 'NanumSquare';
+  color:#222;
+}
+
+/* section_5 */
+.section_5.support {
+  position: relative;
+  overflow: hidden;
+  background: url(../img/section_5-bg_support.jpg) 100% 0% no-repeat;
+  height: 35.8vw;
+}
+
+.section_5 .support_tit {
+  margin-top: 6.3vw;
+  font-weight: 600;
+  font-size: 3vw;
+  color: #f43b00;
+}
+
+.section_5 .support_info {
+  width: 60%;
+  color: #1a1a1a;
+  font-size: 1.4vw;
+  margin-top: 1vw;
+}
+
+.section_5 .support_btn {
+  display: inline-block;
+  padding:0.8vw 3vw;
+  border:1px solid #282828;
+  margin-top:3vw;
+  color:#282828;
+  font-size: 1.25vw;
+  font-weight: 600;
 }
