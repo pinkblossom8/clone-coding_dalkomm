@@ -40,6 +40,16 @@ a {
   margin: 0 auto;
 }
 
+.hid {
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height: 1px;
+  width: 1px;
+}
+
 /* 커스텀시작 */
 html {
   font-size: 20px;
@@ -133,6 +143,16 @@ header.active {
   font-weight: 600;
   font-size: 0.9rem;
   color:#222;
+}
+
+#header nav > ul > li > a .dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ff592E;
+  right: 35px;
+  top: 50px;
 }
 
 #header nav > ul > li:hover > a,
@@ -281,6 +301,7 @@ header.active {
   transform: translateY(-50%);
   max-width: 1440px;
   padding: 0 16px;
+  text-align: left;
 }
 
 .main_wrap .txt_wrap .main_txt {
