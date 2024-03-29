@@ -606,3 +606,242 @@ header.active {
   font-size: 1.25vw;
   font-weight: 600;
 }
+
+/* section_6 */
+.section_6.more-info {
+  height: 30vw;
+  display: flex;
+  position: relative;
+}
+
+.section_6 .more-info_bg-left {
+  background: #f0eae8;
+  width: 50%;
+}
+
+.section_6 .more-info_bg-right {
+  width: 50%;
+  background: url(../img/bg_finder.png) 100% 101% #f43b00 no-repeat;
+  background-size: 15vw;
+
+}
+
+.section_6 .more-info_con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  display: flex;
+}
+
+.section_6 .more-info_item {
+  width: 50%;
+}
+
+.section_6 .more-info_item-left {
+  background: url(../img/bg_smartphone.png) 87% 100% no-repeat;
+  background-size: 20vw 25vw;
+}
+
+.section_6 .more-info_tit {
+  font-family: 'NanumSquare';
+  font-size: 3.15vw;
+  font-weight: 800;
+  text-align: left;
+  color:#f43b00;
+  margin-top:7.2vw;
+}
+
+.section_6 .more-info_message {
+  font-family: 'NanumSquare';
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin-top: 1.5vw;
+  width: 42%;
+  color:#f43b00;
+  word-break: keep-all;
+}
+
+.more-info_item-right .more-info_tit,
+.more-info_item-right .more-info_message {
+  color:#fff;
+  padding-left: 10vw;
+}
+
+.more-info_btn {
+  position: relative;
+  display: inline-block;
+  font-size: 0.95vw;
+  font-weight: 600;
+  margin-top: 5vw;
+}
+
+.more-info_btn::after {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow_right.png) 0 0 no-repeat;
+  width: 1.5vw;
+  height: 0.4vw;
+  top: 0.5vw;
+  right: -2.2vw;
+}
+
+.more-info_finder {
+  background: #fbf4e4;
+  width: 14vw;
+  height: 3vw;
+  margin-top: 3.5vw;
+  margin-left: 10vw;
+}
+
+.more-info_finder input {
+  height: 2.8vw;
+  width: 10vw;
+  font-family: "NanumSquare";
+  font-weight: 700;
+  font-size: 1.3vw;
+  color: #f43b00;
+  padding-left: 1vw;
+  background-color: #fbf4e4;
+  vertical-align: top;
+  outline: none;
+  border: 0;
+}
+
+input::placeholder {color:#f43b00;}
+
+.more-info_finder .search-btn {
+  border: none;
+  outline: none;
+  background: #fbf4e4;
+  width: 2vw;
+}
+
+.more-info_finder .search-btn > img {
+  width: 100%;
+  height: auto;
+  margin-top: 0.7vw;
+}
+
+/* footer */
+#footer {
+  width: 100%;
+  padding: 120px 0;
+  overflow-x: hidden;
+}
+
+.footer-wrap {
+  width: 1288px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer_logo {
+  width: 192px;
+}
+
+.footer-wrap1 ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-wrap1 ul .point_org {
+  color:#ff592E;
+}
+
+.footer-wrap1 ul ul {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color:rgba(34,34,34,0.7);
+  font-weight: 100;
+  margin-top: 1.6rem;
+}
+
+.footer-wrap1 ul ul li + li {
+  margin-top: 0.8rem;
+}
+
+.footer-wrap2 {
+  margin-top: 2.6vw;
+  border-top:1px solid rgba(0,0,0,0.1);
+}
+
+.footer-wrap2 .family-wrap {
+  margin-top: 1.15vw;
+}
+
+#footer select {
+  border-top:none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  appearance: none;
+  font-family:'SpoqaHanSansNeo-Regular';
+  outline: 0;
+}
+
+.footer-wrap2 .family-wrap .select {
+  width: 300px;
+  height: 90px;
+  line-height: 90px;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  background: url(../img/plus.svg) 100% no-repeat;
+}
+
+#footer .copyright {
+  width: 30.7vw;
+  padding: 52px 0 35px;
+  color: rgba(34, 34, 34, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.01rem;
+}
+
+#footer .copyright .point_black {
+  color:#000;
+}
+
+#footer .playstore {
+  display: flex;
+}
+
+#footer .playstore a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(34,34,34,0.1);
+  border-radius: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.icon_apple {
+  background-image: url(../img/appstore.svg);
+  width: 26px;
+  height: 26px;
+  margin-right: 13px;
+}
+
+.icon_google {
+  background-image: url(../img/googleplay.svg);
+  width: 26px;
+  height: 26px;
+  margin-right: 13px;
+}
+
+#footer .playstore .btn-qr {
+  border:none;
+}
