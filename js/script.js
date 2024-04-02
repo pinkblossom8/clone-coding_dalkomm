@@ -21,6 +21,10 @@ function SliderBox1__init() {
     // Optional parameters
     effect : 'fade',
     loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+      },
 
     // If we need pagination
     pagination: {
