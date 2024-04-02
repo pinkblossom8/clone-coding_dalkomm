@@ -67,7 +67,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 999;
   padding: 0 0.8rem;
   background: rgba(255, 255, 255, 0.75);
 }
@@ -844,4 +844,111 @@ input::placeholder {color:#f43b00;}
 
 #footer .playstore .btn-qr {
   border:none;
+}
+
+/* float */
+.float {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 3.2vw;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.float.active {
+  opacity: 1;
+  overflow: visible;
+}
+
+.float .con {
+  position: relative;
+}
+
+.float_content{
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  width: 96px;
+  height: 96px;
+}
+
+.float img {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+.float_txt {
+  position: absolute;
+  display: block;
+  right: 10px;
+  bottom: 113px;
+  width: 116px;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.float:hover .float_txt,
+.float:focus .float_txt {
+  opacity: 1;
+}
+
+.float_txt-copy {
+  width: 100%;
+  height: 63px;
+  padding: 0 32px;
+  background-color: #f43b00;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.float_txt-copy::after { 
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  left: auto;
+  right: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 10px 0 10px;
+  border-color:#f43b00 transparent transparent transparent;
+}
+
+.float-close {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  z-index: 6;
+  overflow: visible;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  border: 0 none;
+  vertical-align: middle;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.float-close img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

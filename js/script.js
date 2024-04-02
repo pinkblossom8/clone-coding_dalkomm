@@ -58,3 +58,8 @@ SliderBox2__init();
 
 // aos
 AOS.init();
+
+// 팝업
+$('.float-close').click(function() {
+  $('.float').removeClass('active');
+});
